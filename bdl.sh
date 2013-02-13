@@ -7,20 +7,6 @@
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 #
-# v0.1 20130118
-# v0.2 20130120 - mb fork
-# v0.3 20130121 - remerge fork
-# v0.4 20130122 - now with menu
-# v0.5 20130125 - optional args added
-# v0.6 20130205 - launch from menu or command line
-#
-# TODO:
-# - Human readable session list
-# - Optional session element config file
-# - Optional sessions path setting
-# - Optional internal (in theory more portable) or external (faster) deps
-# - Make framebuffer aware. Currently fixed size
-#
 
 scrname="Bash Desktop Launcher"
 scrver="0.6"
@@ -154,4 +140,4 @@ case ${#} in # Number of arguments
 esac
 
 let index-- # Make index zero based
-exec ${start} ${sessions[${index}]} # Launch Xorg
+exec "${start}" "${sessions[${index}]}" # Launch Xorg
