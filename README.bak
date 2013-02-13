@@ -44,7 +44,6 @@ DEPENDENCIES
         - Bash v4.1+
         - Dialog by Thomas E. Dickey - http://invisible-island.net/dialog
         - Xorg, with either the startx script or xinit in path
-        - Currently looking for session files under /etc/X11/Sessions only
 
         bdl.sh has built in sanity check and will exit if any of these
         deps aren't fulfilled.
