@@ -112,7 +112,7 @@ gtoe() {
 # Void
 sanity_check() {
     # Do we run this on Bash v4.1+?
-    [[ "${BASH_VERSION}" < 4.1 ]] && { echo -e "${scrname} requires \033[1mbash v4.0 or newer\033[m."; exit 1; }
+    [[ "${BASH_VERSION}" < 4.1 ]] && { echo -e "${scrname} requires \033[1mbash v4.1 or newer\033[m."; exit 1; }
     # Is dialog installed?
     local dialog_path=$(expand dialog) # fc
     [[ ${dialog_path} == "" ]] && { echo -e "dialog v1.2 or newer \033[1mrequired.\033[m"; exit 1; }
