@@ -47,8 +47,8 @@ DEPENDENCIES
         - Xorg, with either the startx script or xinit in path
         - Currently looking for session files under /etc/X11/Sessions only
 
-        bdl.sh has a built in sanity check and will exit if any of these deps
-        aren't fulfilled.
+        bdl.sh has a built in sanity check and will exit if any of these
+        conditions aren't met.
 
 HISTORY
         v0.1 - 20130118 - Initial version
