@@ -42,27 +42,28 @@ COPYRIGHT
 
 DEPENDENCIES
         - Bash v4.1+
-        - Dialog by Thomas E. Dickey - http://invisible-island.net/dialog
+        - Dialog v1.2+ by Thomas E. Dickey
+          http://invisible-island.net/dialog
         - Xorg, with either the startx script or xinit in path
         - Currently looking for session files under /etc/X11/Sessions only
 
-        bdl.sh has built in sanity check and will exit if any of these
-        deps aren't fulfilled.
+        bdl.sh has a built in sanity check and will exit if any of these deps
+        aren't fulfilled.
 
 HISTORY
         v0.1 - 20130118 - Initial version
         v0.2 - 20130120 - mb fork
         v0.3 - 20130121 - Remerge fork
-        v0.4 - 20130122 - Added dialog menu
-        v0.5 - 20130125 - Added optional arguments
-        v0.6 - 20130205 - Support for launching from either menu or command line
+        v0.4 - 20130122 - Dialog menu
+        v0.5 - 20130125 - Optional arguments
+        v0.6 - 20130205 - Launching from either menu or command line
                20130212 - Added to github
 
 TODO
-        These are just ideas of what I intend to implement. I might or might not
-        change my mind about these. Contact me at marcus.hoffren@gmail.com if
-        there is something that you really want implemented and I'll see what I
-        can do.
+        These are just ideas of what I intend to implement. I might or might
+        not change my mind about these. Contact me at marcus.hoffren@gmail.com
+        if there is something that you really want implemented and I'll see
+        what I can do.
 
         - Human readable session list
         - Optional session element config file
