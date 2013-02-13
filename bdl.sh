@@ -25,7 +25,7 @@
 scrname="Bash Desktop Launcher"
 scrver="0.6"
 scrauth="Marcus Hoffren"
-authnick="<dMG/Up Rough>"
+authnick="dMG/Up Rough"
 scrcontact="marcus.hoffren@gmail.com"
 
 usage() {
@@ -41,7 +41,7 @@ usage() {
 
 version() {
     echo "${scrname} v${scrver}"
-    echo "Copyright (C) 2013 ${scrauth} ${authnick}."
+    echo "Copyright (C) 2013 ${scrauth} <${authnick}>."
     echo "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>."
     echo "This is free software: you are free to change and redistribute it."
     echo "There is NO WARRANTY, to the extent permitted by law."
