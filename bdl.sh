@@ -83,10 +83,7 @@ expand() {
 expand_either() {
     for arg in ${@}; do
 	local result=$(expand "${arg}") # fc
-	if [[ "${result}" != "" ]]; then
-	    echo "${result}"
-	    return 0
-	fi
+	[[ "${result}" != "" ]] && { echo "${result}"; return 0; }
     done
     return 1
 }
@@ -118,9 +115,7 @@ sanity_check # fc
 case ${#} in # Number of arguments
     0)
 	index=$(menu "${sessions[@]}" "Default" "Quit") # gvd, fc
-	if (( "${index}" == "${#sessions[@]}" + 2 )); then # Number of array elements + 2 = Quit
-	    exit 0
-	fi;;
+	(( "${index}" == "${#sessions[@]}" + 2 )) && exit 0;; # Number of array elements + 2 = Quit
     1)
 	if [[ "${1}" =~ ^- ]]; then # Does the first argument start with a - ?
 	    args "${1}" # fc
@@ -140,4 +135,4 @@ case ${#} in # Number of arguments
 esac
 
 let index-- # Make index zero based
-exec "${start}" "${sessions[${index}]}" # Launch Xorg
+echo "${start}" "${sessions[${index}]}" # Launch Xorg
