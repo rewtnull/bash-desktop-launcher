@@ -65,7 +65,7 @@ xsessions() {
     local count="1"
     for arg in ${@}; do
 	echo "${count} ${arg##*/}"
-	let count++
+	(( count++ ))
     done
 }
 
@@ -73,7 +73,7 @@ xsessions() {
 expand_either() {
     for arg in ${@}; do
 	local result=$(type -p "${arg}")
-	[[ "${result}" != "" ]] && { echo "${result}"; return 0; }
+	[[ ${result} != "" ]] && { echo "${result}"; return 0; }
     done
     return 1
 }
