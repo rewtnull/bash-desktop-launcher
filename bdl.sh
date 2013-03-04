@@ -107,7 +107,7 @@ case ${#} in # Number of arguments
 		error "\033[1m${1}\033[m is not a valid argument. \033[1m${0} --sessions\033[m to list sessions."
 	    fi
 	else
-	    usage; exit 1
+	    error
         fi;;
     *)
 	error;;
