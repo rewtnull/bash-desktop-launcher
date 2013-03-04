@@ -2,7 +2,7 @@ NAME
         Bash Desktop Launcher - Bash dialog driven Xorg window manager launcher
 
 VERSION
-        0.6
+        0.7
 
 SYNOPSIS
         bdl.sh [--help|-h] [--version|-v] [--sessions|-s] [arg]
@@ -22,7 +22,7 @@ ARGUMENTS
 
 MENU COMMANDS
         F1 - About
-        Use arrow keys optionally first letter or number and enter key to
+        Use arrow keys, optionally first letter or number and enter key to
         launch selected window manager.
 
 AUTHOR
@@ -42,8 +42,7 @@ COPYRIGHT
 
 DEPENDENCIES
         - Bash v4.1+
-        - Dialog v1.2+ by Thomas E. Dickey
-          http://invisible-island.net/dialog
+        - Dialog v1.2+ by Thomas E. Dickey (http://invisible-island.net/dialog)
         - Xorg, with either the startx script or xinit in path
         - Currently looking for session files under /etc/X11/Sessions only
 
@@ -51,24 +50,26 @@ DEPENDENCIES
         conditions aren't met.
 
 HISTORY
-        v0.1 - 20130118 - Initial version
-        v0.2 - 20130120 - mb fork
-        v0.3 - 20130121 - Remerge fork
-        v0.4 - 20130122 - Dialog menu
-        v0.5 - 20130125 - Optional arguments
-        v0.6 - 20130205 - Launching from either menu or command line
-               20130212 - Added to github
+        LEGEND: [+] Add, [-] Remove, [*] Change, [!] Bugfix
+
+        v0.1 (20130118) [+] Initial version
+        v0.2 (20130120) [*] mb fork
+        v0.3 (20130121) [*] Remerge fork
+        v0.4 (20130122) [+] Dialog menu
+        v0.5 (20130125) [+] Optional arguments
+        v0.6 (20130205) [+] Launching from either menu or command line
+             (20130212) [+] Added to github
+        v0.7 (20130304) [*] Code cleanup
+                        [+] Proper error checking
 
 TODO
-        These are just ideas of what I intend to implement. I might or might
-        not change my mind about these. Contact me at marcus.hoffren@gmail.com
-        if there is something that you really want implemented and I'll see
-        what I can do.
+        These are just some ideas of what I want to implement.
+        Contact me at marcus.hoffren@gmail.com if there is something
+        that you really want implemented and I'll see what I can do.
 
         - Human readable session list
         - Optional session element config file
         - Optional sessions path setting
-        - Optional internal (in theory more portable) or external (faster) deps
         - Make framebuffer aware. Currently fixed size
 
 OTHER
